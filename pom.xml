@@ -36,7 +36,7 @@
 						<!-- In oder to run with maven command should-->
 						<!-- clean test -Drunner=<SmokeRunner /
 						RegressionRunner> -->
-						<include>${runner}.java</include>
+						<include>TestRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
