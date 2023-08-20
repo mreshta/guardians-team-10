@@ -18,8 +18,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<!-- adding build pugins to this project -->
 	<build>
 		<plugins>
 			<plugin>
@@ -32,11 +30,7 @@
 				<version>2.22.2</version>
 				<configuration>
 					<includes>
-						<!-- Parametrized Runner for sureFire plugin-->
-						<!-- In oder to run with maven command should-->
-						<!-- clean test -Drunner=<SmokeRunner /
-						RegressionRunner> -->
-						<include>Runner.java</include>
+						<include>TestRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>
