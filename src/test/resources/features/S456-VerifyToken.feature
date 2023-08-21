@@ -3,7 +3,7 @@ Feature: Verify feature Token
 
   Background: Setup test and generate token.
     Given url "https://tek-insurance-api.azurewebsites.net"
-    * def result = callonce read('FirstS.feature')
+    * def result = callonce read('S1-GenerateToken.feature')
     * def validToken = result.response.token
     And path "/api/token/verify"
     And param token = validToken

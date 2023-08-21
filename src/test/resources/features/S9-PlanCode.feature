@@ -3,7 +3,7 @@ Feature: plan code feature
 
   Background: Setup test and get valid token
     Given url "https://tek-insurance-api.azurewebsites.net"
-    * def result = callonce read('FirstS.feature')
+    * def result = callonce read('S1-GenerateToken.feature')
     * def validToken = result.response.token
 
   #Scenario  9
