@@ -1,10 +1,18 @@
 package Scenarios;
 
+import com.intuit.karate.junit5.Karate;
+
 public class Scenario1 {
 
-	public static void main(String[] args) {
-		System.out.println("The test");
+	@Karate.Test
+	public Karate runTime() {
+		return Karate.run("classpath:features")
+				.tags("Smoke");
+		
+		
 
 	}
+
+	
 
 }
