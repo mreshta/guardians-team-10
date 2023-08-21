@@ -4,12 +4,13 @@ Feature: Create Account
     Given url "https://tek-insurance-api.azurewebsites.net"
     * def newAcounte = callonce read('GenerateToken.feature')
     * def validToken = newAcounte .response.token
-    * def CreateAccount = " Bearer " + validToken
+    * def ValidAccount = " Bearer " + validToken
+    * def CreateAccountId = newAcounte.response.id
 
   #Scenario # 10
   Scenario: Creating new Account
     Given path "/api/accounts/add-primary-account"
-    And header Authorization = CreateAccount
+    And header Authorization = ValidAccount
     * def Email = Java.type('Api.Utility.team10.GenerateData')
     * def EmailGenerator = Email.getEmail()
     And request
@@ -28,4 +29,6 @@ Feature: Create Account
     When method post
     Then status 201
     And print response
-    And print response.email == "EmailGenerator"
+    And assert response.firstName == "Dave"
+
+  
