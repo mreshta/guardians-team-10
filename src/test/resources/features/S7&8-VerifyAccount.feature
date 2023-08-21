@@ -3,7 +3,7 @@ Feature: Response Validation
 
   Background: The repeated steps
     Given url "https://tek-insurance-api.azurewebsites.net"
-    * def tokenGenerate = callonce read("FirstS.feature")
+    * def tokenGenerate = callonce read("S1-GenerateToken.feature")
     * def validToken = tokenGenerate.response.token
     * def Authorize = "Bearer " + validToken
 #7
