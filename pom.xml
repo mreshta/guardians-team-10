@@ -1,10 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>Guardians-Team-10</groupId>
-  <artifactId>Guardians-Team-10</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Guardians-Team-10</name>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Guardians-Team-10</groupId>
+	<artifactId>Guardians-Team-10</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Guardians-Team-10</name>
+	<properties>
 
 		<maven.compiler.source>11</maven.compiler.source>
 
@@ -55,9 +57,6 @@
 				<configuration>
 
 					<includes>
-						<!--Parameterize Runner for Surefile plugin -->
-					<!-- inoder to run with maven command should be -->
-					<!-- clean test -Drunner=<SmokeRunner / RegressionRunner> -->
 						<include>${runner}.java</include>
 
 					</includes>
