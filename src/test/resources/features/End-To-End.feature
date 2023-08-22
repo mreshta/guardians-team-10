@@ -15,7 +15,7 @@ Feature: End To End
     * def randomYear = email.generateRandomYear()
     * def Gaddress = email.getAddress()
 
-  Scenario: Create Valid Token
+  Scenario: Create Account, Add Phone, Add Address, Add Car, Delete Account
     #NEW Account
     And path "/api/accounts/add-primary-account"
     And param Authorization = Authorize
