@@ -57,10 +57,7 @@
 				<configuration>
 
 					<includes>
-						<!--Parameterize Runner for Surefile plugin -->
-						<!-- inoder to run with maven command should be -->
-						<!-- clean test -Drunner=<SmokeRunner /
-						RegressionRunner> -->
+						
 						<include>${runner}.java</include>
 
 					</includes>
